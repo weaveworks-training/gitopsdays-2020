@@ -43,3 +43,44 @@ snap install kubectl --classic
 curl -s https://toolkit.fluxcd.io/install.sh | sudo bash
 # enable completions in ~/.bash_profile
 echo ". <(flux completion bash)" >> ~/.bashrc
+
+
+#
+# Clean up the console
+#
+
+echo <<END
+B_BLACK="\[\e[40m\]"
+B_RED="\[\e[41m\]"
+B_GREEN="\[\e[42m\]"
+B_YELLOW="\[\e[43m\]"
+B_BLUE="\[\e[44m\]"
+B_MAGENTA="\[\e[45m\]"
+B_CYAN="\[\e[46m\]"
+B_WHITE="\[\e[47m\]"
+
+F_BLACK="\[\e[30m\]"
+F_RED="\[\e[31m\]"
+F_GREEN="\[\e[32m\]"
+F_YELLOW="\[\e[33m\]"
+F_BLUE="\[\e[34m\]"
+F_MAGENTA="\[\e[35m\]"
+F_CYAN="\[\e[36m\]"
+F_WHITE="\[\e[37m\]"
+
+BOLD="\[\e[1m\]"
+
+END="\[\e[0m\]"
+
+export PS1="${BOLD}${F_GREEN}Gitops Days 2020 (${END}${F_CYAN}\W${END}${BOLD}${F_GREEN})➤ ${END}"
+END >> ~/.bashrc
+
+echo <<END
+######################################################
+
+Now, to make sure you can use pulumi, run:
+
+$ source ~/.bashrc
+
+######################################################
+END
