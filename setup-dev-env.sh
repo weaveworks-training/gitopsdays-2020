@@ -78,15 +78,15 @@ BOLD="\[\e[1m\]"
 
 DONE="\[\e[0m\]"
 
-export PS1="${BOLD}${F_GREEN}Gitops Days 2020 (${DONE}${F_CYAN}\W${DONE}${BOLD}${F_GREEN})➤ ${DONE}"
+export PS1="${F_GREEN}${BOLD}Gitops Days 2020 (${DONE}${F_CYAN}\W${DONE}${F_GREEN}${BOLD})➤ ${DONE}"
 
 END
 
 echo -e $F_RED$BOLD
 cat <<END
-\[\e[41m\]######################################################\[\e[0m\]
+######################################################
 
-Now, to make sure you can use pulumi, run:
+Now, run:
 
 $ source ~/.bashrc
 
