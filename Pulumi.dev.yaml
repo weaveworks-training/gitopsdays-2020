@@ -1,0 +1,6 @@
+encryptionsalt: v1:hg/gWsp7XYw=:v1:sC7l9VK5VK44jZpy:BAt/2Mgy12slymwKks3u8pYvKFjsaQ==
+config:
+  digitalocean:token:
+    secure: v1:de788A+twzssBdJ8:Td++6ueKj3+lvHYFIEX2fG2d3pYXsKvg2U2uNw6CY48nvUlAiut5VAuJHU2ufkItK4cv8Z0lFlmMvlAtC6La3hRPpRi6cs/aflEjI42ifFA=
+  gitopsdays-2020:DIGITALOCEAN_KUBERNETES_TOKEN:
+    secure: v1:w/ia9rdXVrjB//MG:AOi/65gozjFY31By3XMVj8/M9/TMnEg1Hfda+VTGnBVelNM34ATq6vlg0RKNlfMuuGzj64/K8da0VrmiwS3/9TQFj/oOb+Krqzr7Zd9XDp0=
