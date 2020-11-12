@@ -1,6 +1,6 @@
 #! /usr/bin/bash
 
-echo <<END
+cat <<END
 ####### GITOPS DAYS 2020 TRAINING ####################
 
 Hi There!
@@ -49,7 +49,7 @@ echo ". <(flux completion bash)" >> ~/.bashrc
 # Clean up the console
 #
 
-echo <<END
+cat ~/.bashrc <<- END
 B_BLACK="\[\e[40m\]"
 B_RED="\[\e[41m\]"
 B_GREEN="\[\e[42m\]"
@@ -73,9 +73,9 @@ BOLD="\[\e[1m\]"
 END="\[\e[0m\]"
 
 export PS1="${BOLD}${F_GREEN}Gitops Days 2020 (${END}${F_CYAN}\W${END}${BOLD}${F_GREEN})➤ ${END}"
-END >> ~/.bashrc
+END >> 
 
-echo <<END
+cat <<END
 ######################################################
 
 Now, to make sure you can use pulumi, run:
