@@ -1,5 +1,10 @@
 #! /usr/bin/bash
 
+F_RED="\e[31m"
+BOLD="\e[1m"
+DONE="\e[0m"
+
+echo -e $F_RED$BOLD
 cat <<END
 ####### GITOPS DAYS 2020 TRAINING ####################
 
@@ -22,6 +27,7 @@ Brice
 
 ######################################################
 END
+echo -e $DONE
 
 
 #
@@ -76,6 +82,7 @@ export PS1="${BOLD}${F_GREEN}Gitops Days 2020 (${DONE}${F_CYAN}\W${DONE}${BOLD}$
 
 END
 
+echo -e $F_RED$BOLD
 cat <<END
 \[\e[41m\]######################################################\[\e[0m\]
 
@@ -85,3 +92,4 @@ $ source ~/.bashrc
 
 ######################################################
 END
+echo -e $DONE
