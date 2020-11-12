@@ -28,7 +28,7 @@ END
 # Install Pulumi
 #
 curl -fsSL https://get.pulumi.com | sudo sh
-export PATH=$PATH:/home/training/.pulumi/bin
+echo 'export PATH=$PATH:/home/$(whoami)/.pulumi/bin' >> ~/.bashrc
 
 
 #
@@ -49,7 +49,7 @@ echo ". <(flux completion bash)" >> ~/.bashrc
 # Clean up the console
 #
 
-cat ~/.bashrc <<- END
+cat <<END >> ~/.bashrc
 B_BLACK="\[\e[40m\]"
 B_RED="\[\e[41m\]"
 B_GREEN="\[\e[42m\]"
@@ -70,13 +70,14 @@ F_WHITE="\[\e[37m\]"
 
 BOLD="\[\e[1m\]"
 
-END="\[\e[0m\]"
+DONE="\[\e[0m\]"
 
-export PS1="${BOLD}${F_GREEN}Gitops Days 2020 (${END}${F_CYAN}\W${END}${BOLD}${F_GREEN})➤ ${END}"
-END >> 
+export PS1="${BOLD}${F_GREEN}Gitops Days 2020 (${DONE}${F_CYAN}\W${DONE}${BOLD}${F_GREEN})➤ ${DONE}"
+
+END
 
 cat <<END
-######################################################
+\[\e[41m\]######################################################\[\e[0m\]
 
 Now, to make sure you can use pulumi, run:
 
